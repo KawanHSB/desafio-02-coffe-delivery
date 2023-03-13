@@ -17,8 +17,6 @@
     --text: #574F4D;
     --subtitle: #403937;
     --title: #272221;
-
-
 }
 
 * {
@@ -29,6 +27,7 @@
 
 html {
     background: var(--background);
+    font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1080px) {
