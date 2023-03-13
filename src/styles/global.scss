@@ -1,0 +1,44 @@
+:root {
+    --purple-dark: #4B2995;
+    --purple: #8047F8;
+    --purple-light: #EBE5F9;
+
+    --yellow-dark: #C47F17;
+    --yelow: #DBAC2C;
+    --yellow-light: #F1E9C9;
+
+    --white: #FFFFFF;
+    --background: #FAFAFA;
+    --card: #F3F2F2;
+    --input: #EDEDED;
+    --button: #E6E5E5;
+    --hover: #D7D5D5;
+    --label: #8D8686;
+    --text: #574F4D;
+    --subtitle: #403937;
+    --title: #272221;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--background);
+}
+
+@media (max-width: 1080px) {
+    html{
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 80.5%;
+    }
+}
