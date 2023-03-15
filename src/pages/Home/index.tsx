@@ -4,7 +4,7 @@ import { FaShoppingCart } from 'react-icons/fa'
 import { RiTimerFill } from 'react-icons/ri'
 import Package from '../../assets/package-white.svg'
 import Coffe from '../../assets/coffe-white.svg'
-import ExpressoTradicional from '../../assets/expresso-tradicional.png'
+import CardList from './components/CardList'
 
 export default function Home() {
   return (
@@ -51,26 +51,7 @@ export default function Home() {
       </div>
       <h3 className={styles.nossosCafes}>Nossos cafés</h3>
       <section className={styles.coffeListWraper}>
-        <div className={styles.coffeSection}>
-          <div className={styles.coffeListWraper}>
-            <div className={styles.coffeList}>
-              <div className={styles.coffeCard}>
-                <img
-                  src={ExpressoTradicional}
-                  alt="foto do expresso tradicional"
-                />
-                <span>
-                  <p>TRADICIONAL</p>
-                </span>
-                <h3>EXPRESSO TRADICIONAL</h3>
-                <p className={styles.label}>
-                  O tradicional café feito com água quente e grãos moídos
-                </p>
-                <div className={styles.buyWraper}></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CardList />
       </section>
     </div>
   )
