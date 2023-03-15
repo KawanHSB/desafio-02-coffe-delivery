@@ -4,48 +4,74 @@ import { FaShoppingCart } from 'react-icons/fa'
 import { RiTimerFill } from 'react-icons/ri'
 import Package from '../../assets/package-white.svg'
 import Coffe from '../../assets/coffe-white.svg'
+import ExpressoTradicional from '../../assets/expresso-tradicional.png'
 
 export default function Home() {
   return (
-    <div className={styles.coffeHome}>
-      <section>
-        <h3>Encontre o café perfeito para qualquer hora do dia</h3>
-        <p className={styles.subtitle}>
-          Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
-          hora
-        </p>
-        <section className={styles.itens}>
-          <div>
-            <span className={styles.iten}>
-              <span className={styles.cartIcon}>
-                <FaShoppingCart color="white" />
+    <div>
+      <div className={styles.coffeHome}>
+        <section>
+          <h3>Encontre o café perfeito para qualquer hora do dia</h3>
+          <p className={styles.subtitle}>
+            Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
+            hora
+          </p>
+          <section className={styles.itens}>
+            <div>
+              <span className={styles.iten}>
+                <span className={styles.cartIcon}>
+                  <FaShoppingCart color="white" />
+                </span>
+                <p>Compra simples e segura</p>
               </span>
-              <p>Compra simples e segura</p>
-            </span>
-            <span className={styles.iten}>
-              <span className={styles.timerIcon}>
-                <RiTimerFill />
+              <span className={styles.iten}>
+                <span className={styles.timerIcon}>
+                  <RiTimerFill />
+                </span>
+                <p>Entrega rápida e rastreada</p>
               </span>
-              <p>Entrega rápida e rastreada</p>
-            </span>
-          </div>
-          <div>
-            <span className={styles.iten}>
-              <span className={styles.packageIcon}>
-                <img src={Package} alt="Package-icon" />
+            </div>
+            <div>
+              <span className={styles.iten}>
+                <span className={styles.packageIcon}>
+                  <img src={Package} alt="Package-icon" />
+                </span>
+                <p>Embalagem mantém o café intacto</p>
               </span>
-              <p>Embalagem mantém o café intacto</p>
-            </span>
-            <span className={styles.iten}>
-              <span className={styles.coffeIcon}>
-                <img src={Coffe} alt="Coffe-icon" />
+              <span className={styles.iten}>
+                <span className={styles.coffeIcon}>
+                  <img src={Coffe} alt="Coffe-icon" />
+                </span>
+                <p>O café chega fresquinho até você</p>
               </span>
-              <p>O café chega fresquinho até você</p>
-            </span>
-          </div>
+            </div>
+          </section>
         </section>
+        <img src={coffeImage} alt="" className={styles.coffeHomeImage} />
+      </div>
+      <h3 className={styles.nossosCafes}>Nossos cafés</h3>
+      <section className={styles.coffeListWraper}>
+        <div className={styles.coffeSection}>
+          <div className={styles.coffeListWraper}>
+            <div className={styles.coffeList}>
+              <div className={styles.coffeCard}>
+                <img
+                  src={ExpressoTradicional}
+                  alt="foto do expresso tradicional"
+                />
+                <span>
+                  <p>TRADICIONAL</p>
+                </span>
+                <h3>EXPRESSO TRADICIONAL</h3>
+                <p className={styles.label}>
+                  O tradicional café feito com água quente e grãos moídos
+                </p>
+                <div className={styles.buyWraper}></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <img src={coffeImage} alt="" className={styles.coffeHomeImage} />
     </div>
   )
 }

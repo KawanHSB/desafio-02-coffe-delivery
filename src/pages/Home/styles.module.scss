@@ -14,7 +14,7 @@
 
     h3 {
         font-family: "Baloo 2", cursive;
-        font-weight: bold;
+        font-weight: 900;
         font-size: 3rem;
         width: 36.75rem;
         height: 7.75rem;
@@ -80,6 +80,114 @@
         }
 
     }
+}
 
+.nossosCafes {
+    display: flex;
+    justify-content: center;
+    padding-right: 58rem;
+    font-family: "Baloo 2", cursive;
+    font-weight: 900;
+    color: var(--subtitle);
+    line-height: 130%;
+    font-size: 2rem;
 
+}
+
+.coffeSectionWraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.coffeSection {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .coffeListWraper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3.375rem;
+
+        .coffeList {
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            width: 70rem;
+            height: 100%;
+
+            
+
+            .coffeCard {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 16rem;
+                height: 19.375rem;
+                background: var(--card);
+                border-radius: 8px;
+                border-top-right-radius: 36px;
+                border-bottom-left-radius: 36px;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                margin-bottom: 2.5rem;
+                position: relative;
+                flex-direction: column;
+
+                img {
+                    bottom: 13.125rem;
+                    position: absolute;
+                    height: 7.5rem;
+                    width: 7.5rem;
+                }
+
+                h3 {
+                    margin-bottom: 0.5rem;
+                    color: var(--subtitle);
+                    font-weight: 800;
+                    font-family: "Baloo 2", cursive;
+                    font-size: 1.25rem;
+                }
+
+                span {
+                    background: var(--yellow-light);
+                    border-radius: 20px;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 0.25rem;
+                    padding-bottom: 0.25rem;
+                    margin-bottom: 1rem;
+                    margin-top: 5rem;
+                    p {
+                        color: var(--yellow-dark);
+                        font-weight: 800;
+                        line-height: 130%;
+                        font-size: 0.625rem;
+                    }
+                }
+
+                .label {
+                    text-align: center;
+                    color: var(--label);
+                    width: 13.5rem;
+                    line-height: 130%;
+                    font-size: 0.875rem;
+                }
+
+                .buyWraper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 13rem;
+                    height: 2.375rem;
+                }
+            }   
+        }
+    }
 }
