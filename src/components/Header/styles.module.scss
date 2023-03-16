@@ -1,48 +1,56 @@
-header {
+.headerWraper {
     display: flex;
-    justify-content: space-between;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    align-items: center;
-    line-height: 160%;
-    font-size: 0.875rem;
-
-    .locateCart {
+    justify-content: center;
+    
+    header {
         display: flex;
-
-        .locate {
+        justify-content: center;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        line-height: 160%;
+        font-size: 0.875rem;        
+    
+        .locateCart {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--purple-light);
-            height: 2.375rem;
-            width: 8.938rem;
-            border-radius: 8px;
-
-            p {
-                margin-left: 0.25rem;
-                color: var(--purple-dark);
+            margin-left: 52.625rem;
+    
+            .locate {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--purple-light);
+                height: 2.375rem;
+                width: 8.938rem;
+                border-radius: 8px;
+    
+                p {
+                    margin-left: 0.25rem;
+                    color: var(--purple-dark);
+                }
+    
+                .locateIcon {
+                    color: var(--purple);
+                }
             }
-
-            .locateIcon {
-                color: var(--purple);
-            }
-        }
-
-        .cart {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--yellow-light);
-            height: 2.375rem;
-            width: 2.375rem;
-            border-radius: 8px;
-            margin-left: 0.75rem;
-            .cartIcon {
-                color: var(--yellow-dark);
+    
+            .cart {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--yellow-light);
+                height: 2.375rem;
+                width: 2.375rem;
+                border-radius: 8px;
+                margin-left: 0.75rem;
+                .cartIcon {
+                    color: var(--yellow-dark);
+                }
             }
         }
     }
+
 }
+
