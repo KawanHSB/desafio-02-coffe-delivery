@@ -1,9 +1,11 @@
 import styles from './styles.module.scss'
 import { FaShoppingCart } from 'react-icons/fa'
+import { useState } from 'react'
 
 type contentType = string
 
 Card.defaultProps = {
+  tag1: 'TRADICIONAL',
   tag2: '',
   tag3: '',
 }
@@ -23,6 +25,17 @@ export default function Card({
   tag3: contentType
   imgSrc: contentType
 }) {
+  const [amount, setAmount] = useState(0)
+
+  function handleAdd() {
+    setAmount(amount + 1)
+  }
+
+  function handleRemove() {
+    if (amount !== 0) {
+      setAmount(amount - 1)
+    }
+  }
   return (
     <div className={styles.coffeCard}>
       <img src={imgSrc} alt="foto do expresso tradicional" />
@@ -49,9 +62,9 @@ export default function Card({
           <h3>9,90</h3>
         </span>
         <span className={styles.itens}>
-          <button>-</button>
-          <p>1</p>
-          <button>+</button>
+          <button onClick={handleRemove}>-</button>
+          <p>{amount}</p>
+          <button onClick={handleAdd}>+</button>
         </span>
         <span className={styles.cartIconContainer}>
           <FaShoppingCart />
