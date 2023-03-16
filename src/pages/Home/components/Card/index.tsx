@@ -2,17 +2,46 @@ import styles from './styles.module.scss'
 import ExpressoTradicional from '../../../../assets/expresso-tradicional.png'
 import { FaShoppingCart } from 'react-icons/fa'
 
-export default function Card() {
+type contentType = string
+
+Card.defaultProps = {
+  tag2: '',
+  tag3: '',
+}
+
+export default function Card({
+  title,
+  desc,
+  tag1,
+  tag2,
+  tag3,
+}: {
+  title: contentType
+  desc: contentType
+  tag1: contentType
+  tag2: contentType
+  tag3: contentType
+}) {
   return (
     <div className={styles.coffeCard}>
       <img src={ExpressoTradicional} alt="foto do expresso tradicional" />
-      <span className={styles.tag}>
-        <p>TRADICIONAL</p>
-      </span>
-      <h3>EXPRESSO TRADICIONAL</h3>
-      <p className={styles.label}>
-        O tradicional café feito com água quente e grãos moídos
-      </p>
+      <div className={styles.tagWraper}>
+        <span className={styles.tag}>
+          <p>{tag1}</p>
+        </span>
+        {tag2.length ? (
+          <span className={styles.tag}>
+            <p>{tag2}</p>
+          </span>
+        ) : null}
+        {tag3.length ? (
+          <span className={styles.tag}>
+            <p>{tag3}</p>
+          </span>
+        ) : null}
+      </div>
+      <h3>{title}</h3>
+      <p className={styles.label}>{desc}</p>
       <div className={styles.buyWraper}>
         <span className={styles.value}>
           <p>R$</p>

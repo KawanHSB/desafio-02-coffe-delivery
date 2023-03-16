@@ -6,7 +6,7 @@ export default function CardList() {
     <div className={styles.coffeSection}>
       <div className={styles.coffeListWraper}>
         <div className={styles.coffeList}>
-          <Card />
+          <Card title={'k'} desc={'a'} tag1={'a'} tag2={'fafa'} tag3={'1'} />
         </div>
       </div>
     </div>
