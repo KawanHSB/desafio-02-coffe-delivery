@@ -1,5 +1,4 @@
 import styles from './styles.module.scss'
-import ExpressoTradicional from '../../../../assets/expresso-tradicional.png'
 import { FaShoppingCart } from 'react-icons/fa'
 
 type contentType = string
@@ -15,16 +14,18 @@ export default function Card({
   tag1,
   tag2,
   tag3,
+  imgSrc,
 }: {
   title: contentType
   desc: contentType
   tag1: contentType
   tag2: contentType
   tag3: contentType
+  imgSrc: contentType
 }) {
   return (
     <div className={styles.coffeCard}>
-      <img src={ExpressoTradicional} alt="foto do expresso tradicional" />
+      <img src={imgSrc} alt="foto do expresso tradicional" />
       <div className={styles.tagWraper}>
         <span className={styles.tag}>
           <p>{tag1}</p>
