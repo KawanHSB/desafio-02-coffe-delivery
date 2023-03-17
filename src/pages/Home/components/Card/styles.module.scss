@@ -103,6 +103,11 @@
                 border: none;
                 color: var(--purple);
                 font-size: 1.70rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--purple-dark);
+                }
             }
         }
 
@@ -116,6 +121,8 @@
             width: 2.375rem;
             border-radius: 6px;
             margin-left: 0.5rem;
+            border: 0;
+            cursor: pointer;
 
             .cartIcon {
                 height: 1.375rem;
@@ -123,4 +130,4 @@
             }
         }
     }
-}   
+}

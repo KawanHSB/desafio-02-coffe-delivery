@@ -66,9 +66,9 @@ export default function Card({
           <p>{amount}</p>
           <button onClick={handleAdd}>+</button>
         </span>
-        <span className={styles.cartIconContainer}>
+        <button className={styles.cartIconContainer}>
           <FaShoppingCart />
-        </span>
+        </button>
       </div>
     </div>
   )

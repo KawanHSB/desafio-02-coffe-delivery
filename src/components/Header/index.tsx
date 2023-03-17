@@ -11,11 +11,11 @@ export function Header() {
         <div className={styles.locateCart}>
           <span className={styles.locate}>
             <IoLocationSharp className={styles.locateIcon} />
-            <p>porto alegre</p>
+            <p>Porto alegre</p>
           </span>
-          <span className={styles.cart}>
+          <button className={styles.cart}>
             <FaShoppingCart className={styles.cartIcon} />
-          </span>
+          </button>
         </div>
       </header>
     </div>

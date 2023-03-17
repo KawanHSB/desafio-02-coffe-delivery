@@ -1,7 +1,7 @@
 .headerWraper {
     display: flex;
     justify-content: center;
-    
+
     header {
         display: flex;
         justify-content: center;
@@ -45,6 +45,8 @@
                 width: 2.375rem;
                 border-radius: 8px;
                 margin-left: 0.75rem;
+                border: 0;
+                cursor: pointer;
                 .cartIcon {
                     color: var(--yellow-dark);
                 }
@@ -53,4 +55,3 @@
     }
 
 }
-
