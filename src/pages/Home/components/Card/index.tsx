@@ -29,6 +29,7 @@ export default function Card({
 
   function handleAdd() {
     setAmount(amount + 1)
+    console.log(amount)
   }
 
   function handleRemove() {
