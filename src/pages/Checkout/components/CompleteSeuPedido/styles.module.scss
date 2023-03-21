@@ -1,0 +1,70 @@
+.componentWraper {
+    text-align: start;
+    width: 40rem;
+    height: 39.313rem;
+
+    h3 {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 900;
+        font-size: 1.125rem;
+        color: var(--subtitle);
+    }
+
+    .endereco {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.938rem;
+        width: 100%;
+        height: 23.25rem;
+        background: var(--card);
+        border-radius: 8px;
+
+        .title {
+            display: flex;
+            width: 35rem;
+            height: 2.75rem;
+            margin-top: 2.5rem;
+
+            .locateIcon {
+                width: 1.375rem;
+                height: 1.375rem;
+                color: var(--yellow-dark);
+            }
+
+            span {
+                margin-left: 0.5rem;      
+                
+                h5 {
+                    font-size: 1rem;
+                    font-family: "Roboto",sans-serif;
+                    color: var(--subtitle);
+                 }
+    
+                p {
+                    font-size: 0.875rem;
+                    color: var(--text);
+                }
+            }
+        }
+
+        .formAdress {
+            margin-top: 2rem;
+            width: 35rem;
+            height: 13.5rem;
+            background: cadetblue;
+            input {
+                height: 2.625rem;
+                background: var(--input);
+                border: 1.5px solid var(--button);
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .pagamento {
+        background: blue;
+    }
+}
+
+
+
