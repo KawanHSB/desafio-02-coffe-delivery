@@ -2,8 +2,9 @@ import styles from './styles.module.scss'
 import { FaShoppingCart } from 'react-icons/fa'
 import { IoLocationSharp } from 'react-icons/io5'
 import Logo from '../../assets/Logo.svg'
-import { CoffeCardContext } from '../../App'
+
 import { useContext } from 'react'
+import { CoffeCardContext } from '../../contexts/CoffeCardContext'
 
 export function Header() {
   const { totalAmount } = useContext(CoffeCardContext)
@@ -17,7 +18,11 @@ export function Header() {
             <p>Porto alegre</p>
           </span>
           <button className={styles.cart}>
-            {totalAmount}
+            {totalAmount ? (
+              <span>
+                <p>{totalAmount}</p>
+              </span>
+            ) : null}
             <FaShoppingCart className={styles.cartIcon} />
           </button>
         </div>
