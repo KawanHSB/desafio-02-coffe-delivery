@@ -4,7 +4,7 @@ import { FaShoppingCart } from 'react-icons/fa'
 import { RiTimerFill } from 'react-icons/ri'
 import Package from '../../assets/package-white.svg'
 import Coffe from '../../assets/coffe-white.svg'
-import CardList from './components/CardList'
+import CoffeList from './components/CoffeList'
 
 export default function Home() {
   return (
@@ -51,7 +51,7 @@ export default function Home() {
       </div>
       <h3 className={styles.nossosCafes}>Nossos cafés</h3>
       <section className={styles.coffeListWraper}>
-        <CardList />
+        <CoffeList />
       </section>
     </div>
   )
