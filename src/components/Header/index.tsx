@@ -19,7 +19,7 @@ export function Header() {
           </span>
           <button className={styles.cart}>
             {totalAmount ? (
-              <span>
+              <span className={styles.cardNumber}>
                 <p>{totalAmount}</p>
               </span>
             ) : null}
