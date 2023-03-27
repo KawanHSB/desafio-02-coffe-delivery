@@ -36,6 +36,7 @@ export function CompleteSeuPedido() {
             </p>
           </span>
         </span>
+        <div className={styles.paymentWraper}></div>
       </div>
     </div>
   )
