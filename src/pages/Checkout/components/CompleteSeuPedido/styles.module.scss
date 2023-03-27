@@ -2,12 +2,24 @@
     text-align: start;
     width: 40rem;
     height: 39.313rem;
+    margin-right: 1rem;
 
     h3 {
         font-family: "Baloo 2", sans-serif;
         font-weight: 900;
         font-size: 1.125rem;
         color: var(--subtitle);
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-family: "Roboto",sans-serif;
+        color: var(--subtitle);
+     }
+    
+    p {
+        font-size: 0.875rem;
+        color: var(--text);
     }
 
     .endereco {
@@ -32,18 +44,7 @@
             }
 
             span {
-                margin-left: 0.5rem;      
-                
-                h5 {
-                    font-size: 1rem;
-                    font-family: "Roboto",sans-serif;
-                    color: var(--subtitle);
-                 }
-    
-                p {
-                    font-size: 0.875rem;
-                    color: var(--text);
-                }
+                margin-left: 0.5rem;
             }
         }
 
@@ -51,7 +52,61 @@
             margin-top: 2rem;
             width: 35rem;
             height: 13.5rem;
-            background: cadetblue;
+            display: grid;
+            // grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 3.75rem;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 1rem;
+
+            .cep {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            .rua {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            .numero{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            .complemento {
+                grid-column-start: 2;
+                grid-column-end: 5;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            .bairro {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+            .cidade {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+            .uf {
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+           .ufSigla {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            }
+
             input {
                 height: 2.625rem;
                 background: var(--input);
@@ -62,9 +117,28 @@
     }
 
     .pagamento {
-        background: blue;
+        margin-top: 0.75rem;
+        width: 100%;
+        height: 12.938rem;
+        background: var(--card);
+        border-radius: 8px;
+        display: flex;
+        
+
+        .currencyICon {
+            color: var(--purple);
+            width: 1.375rem;
+            height: 1.375rem;
+        }
+
+        .title {
+            display: flex;
+            margin-left: 2.5rem;
+            margin-top: 2.5rem;
+
+            span {
+                margin-left: 0.5rem;
+            }
+        }
     }
 }
-
-
-
