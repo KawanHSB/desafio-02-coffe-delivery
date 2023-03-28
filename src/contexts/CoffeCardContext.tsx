@@ -46,7 +46,7 @@ export function CoffeCardContextProvider({
       desc: 'O tradicional café feito com água quente e grãos moídos',
       tag1: 'TRADICIONAL',
       imgSrc: expressoTradicional,
-      amount: 0,
+      amount: 2,
     },
     {
       title: 'Expresso Americano',

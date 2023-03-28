@@ -1,3 +1,15 @@
 .componentWraper {
     margin-left: 1rem;
+
+    .coffesCart {
+        margin-top: 0.938rem;
+        width: 28rem;
+        height: 31.125rem;
+        background: var(--card);
+        border-radius: 10px;
+        border-top-right-radius: 44px;
+        border-bottom-left-radius: 44px;
+        display: flex;
+        justify-content: center;
+    }
 }
