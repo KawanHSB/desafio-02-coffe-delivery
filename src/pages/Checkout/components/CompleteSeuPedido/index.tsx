@@ -1,5 +1,11 @@
 import styles from './styles.module.scss'
-import { MapPinLine, CurrencyDollar } from '@phosphor-icons/react'
+import {
+  MapPinLine,
+  CurrencyDollar,
+  CreditCard,
+  Bank,
+  Money,
+} from '@phosphor-icons/react'
 export function CompleteSeuPedido() {
   return (
     <div className={styles.componentWraper}>
@@ -14,13 +20,13 @@ export function CompleteSeuPedido() {
             </span>
           </span>
           <form className={styles.formAdress}>
-            <input className={styles.cep} placeholder="cep" />
-            <input className={styles.rua} placeholder="rua" />
-            <input className={styles.numero} placeholder="numero" />
-            <input className={styles.complemento} placeholder="complemento" />
-            <input className={styles.cidade} placeholder="cidade" />
-            <input className={styles.uf} placeholder="uf" />
-            <input className={styles.ufSigla} placeholder="ufSigla" />
+            <input className={styles.cep} placeholder="CEP" />
+            <input className={styles.rua} placeholder="Rua" />
+            <input className={styles.numero} placeholder="Numero" />
+            <input className={styles.complemento} placeholder="Complemento" />
+            <input className={styles.bairro} placeholder="Bairro" />
+            <input className={styles.cidade} placeholder="Cidade" />
+            <input className={styles.uf} placeholder="UF" />
           </form>
         </span>
       </div>
@@ -36,7 +42,20 @@ export function CompleteSeuPedido() {
             </p>
           </span>
         </span>
-        <div className={styles.paymentWraper}></div>
+        <div className={styles.paymentWraper}>
+          <button>
+            <CreditCard className={styles.icon} />
+            <span>Cartão de crédito</span>
+          </button>
+          <button>
+            <Bank className={styles.icon} />
+            <span>cartão de débito</span>
+          </button>
+          <button>
+            <Money className={styles.icon} />
+            <span>Dinheiro</span>
+          </button>
+        </div>
       </div>
     </div>
   )

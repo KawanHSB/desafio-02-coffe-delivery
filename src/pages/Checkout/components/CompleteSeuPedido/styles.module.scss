@@ -4,24 +4,6 @@
     height: 39.313rem;
     margin-right: 1rem;
 
-    h3 {
-        font-family: "Baloo 2", sans-serif;
-        font-weight: 900;
-        font-size: 1.125rem;
-        color: var(--subtitle);
-    }
-
-    h5 {
-        font-size: 1rem;
-        font-family: "Roboto",sans-serif;
-        color: var(--subtitle);
-     }
-    
-    p {
-        font-size: 0.875rem;
-        color: var(--text);
-    }
-
         .endereco {
             display: flex;
             justify-content: center;
@@ -83,7 +65,7 @@
                     grid-row-end: 4;
                 }
                 .bairro {
-                    grid-column-start: 1;
+                    grid-column-start: 2;
                     grid-column-end: 4;
                     grid-row-start: 4;
                     grid-row-end: 5;
@@ -100,7 +82,7 @@
                     grid-row-start: 4;
                     grid-row-end: 5;
                 }
-            .ufSigla {
+            .uf {
                 grid-column-start: 4;
                 grid-column-end: 5;
                 grid-row-start: 4;
@@ -143,9 +125,35 @@
 
         .paymentWraper {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             margin-top: 2rem;
-            
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+
+            button {
+                display: flex;
+                align-items: center;
+                border: none;
+                background: var(--button);
+                height: 3.188rem;
+                width: 11rem;
+                border-radius: 6px;
+
+                &:hover {
+                    background: var(--hover);
+                }
+                
+                .icon {
+                    margin-left: 1rem;
+                    color: var(--purple);
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+
+                span {
+                    margin-left: 0.75rem;
+                }
+            }
         }
     }
 }

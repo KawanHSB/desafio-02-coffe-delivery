@@ -2,4 +2,22 @@
     display: flex;
     justify-content: center;
     margin-top: 2.5rem;
+
+    h3 {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 900;
+        font-size: 1.125rem;
+        color: var(--subtitle);
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-family: "Roboto",sans-serif;
+        color: var(--subtitle);
+     }
+    
+    p {
+        font-size: 0.875rem;
+        color: var(--text);
+    }
 }
